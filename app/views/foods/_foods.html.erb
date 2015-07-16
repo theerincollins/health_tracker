@@ -1,0 +1,13 @@
+<table class="pretty">
+  <tr>
+    <th> <%= sortable "name"%></th>
+    <th> <%= sortable "calorie_count", "Calories" %></th>
+  </tr>
+
+  <tr>
+    <% @foods.each do |food| %>
+      <td> <%= food.name %></td>
+      <td> <%= food.calorie_count %></td>
+  </tr>
+  <% end %>
+</table>
